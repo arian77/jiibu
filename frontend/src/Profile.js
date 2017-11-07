@@ -3,8 +3,10 @@ import React, { Component } from "react";
 class Profile extends React.Component {
   render() {
     return (
-      <div>
-        <p>Halo halo Jakarta </p>
+      <div align="center">
+        <img src="./red-1618916_640.png" />
+        <h5>Arian Markus </h5>
+        <p> Software Developer </p>
       </div>
     );
   }
