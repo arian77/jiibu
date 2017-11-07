@@ -5,6 +5,7 @@ import Answer from "./Answer";
 import Profile from "./Profile";
 import Askquestion from "./Askquestion";
 import Logout from "./Logout";
+import Welcome from "./Welcome";
 
 import logo from "./logo.svg";
 import "./App.css";
@@ -19,6 +20,9 @@ const Links = () => (
     </Link>
     <Link className="a" to={{ pathname: "/answer" }}>
       Answer
+    </Link>
+    <Link className="a" to={{ pathname: "/welcome" }}>
+      Welcome
     </Link>
     <Link className="p" to={{ pathname: "/profile" }}>
       Profile
@@ -38,6 +42,7 @@ const App = () => (
       <Links />
       <Route exact path="/" component={Home} />
       <Route path="/answer" component={Answer} />
+      <Route path="/welcome" component={Welcome} />
       <Route path="/profile" component={Profile} />
       <Route path="/question" component={Askquestion} />
       <Route path="/logout" component={Logout} />

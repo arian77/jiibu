@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-class Askquestion extends React.Component {
+class Askquestion extends Component {
   render() {
     return (
       <div align="center">

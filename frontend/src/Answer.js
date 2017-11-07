@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Answer extends React.Component {
+class Answer extends Component {
   render() {
     return (
       <div align="center">
