@@ -24,21 +24,47 @@
 
 .n {
   margin-top: 30px;
+  border: 2px solid red;
+  border-top: auto;
+  border-bottom: auto;
+  border-radius: 5px;
 }
+
+.logo {
+  margin-right: 10px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: red;
+} /*logo*/
 
 .h {
   margin-right: 10px;
-  margin-left: 150px;
-}
+  margin-left: 50px;
+} /*home*/
 
-.p {
+.a {
   margin-right: 10px;
   margin-left: 10px;
-}
+} /*answer*/
 
-.c {
+.p {
+  margin-right: 1px;
+  margin-left: 200px;
+} /*profile*/
+
+.q {
   margin-right: 10px;
-  margin-left: 300px;
+  margin-left: 15px;
+} /*askquestion*/
+
+.log {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 10px;
+} /*logout*/
+
+.textarea {
+  text-align: 1000px;
 }
 
 @keyframes App-logo-spin {
