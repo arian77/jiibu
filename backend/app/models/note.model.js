@@ -4,6 +4,7 @@ var NoteSchema = mongoose.Schema(
   {
     fullname: String,
     email: String,
+
     password: String,
     question: String,
     answer: String

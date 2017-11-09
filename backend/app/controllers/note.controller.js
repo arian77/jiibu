@@ -2,12 +2,16 @@ var Note = require("../models/note.model.js");
 
 exports.create = function(req, res) {
   // Create and Save a new Note
-  if (!req.body.content) {
+  if (!req.body.email) {
     res.status(400).send({ message: "Note can not be empty" });
   }
   var note = new Note({
-    title: req.body.title || "Untitled Note",
-    content: req.body.content
+    fullname: req.body.fullname || "Untitled Note",
+    email: req.body.email,
+    email: req.body.email,
+    password: req.body.password,
+    question: req.body.question,
+    answer: req.body.answer
   });
 
   note.save(function(err, data) {
@@ -58,8 +62,12 @@ exports.update = function(req, res) {
       });
     }
 
-    note.title = req.body.title;
-    note.content = req.body.content;
+    note.fullname = req.body.fullname;
+    note.email = req.body.email;
+
+    note.password = req.body.password;
+    note.question = req.body.question;
+    note.answer = req.body.answer;
 
     note.save(function(err, data) {
       if (err) {
