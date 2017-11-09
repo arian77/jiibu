@@ -5,9 +5,14 @@ class Home extends Component {
     return (
       <div align="center">
         <br />
-        <textarea className="textarea" rows="4" cols="50">
-          What is your Question ?
-        </textarea>
+        <textarea
+          className="textarea"
+          placeholder="What is your Question ? "
+          rows="4"
+          cols="50"
+          placeholder="What is your Question ? "
+        />
+
         <br />
         <input type="submit" value="Submit" />
       </div>

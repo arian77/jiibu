@@ -6,8 +6,14 @@ class Askquestion extends Component {
     return (
       <div align="center">
         <br />
-        <input type="text" name="firstname" placeholder="Your Question" />
-        <br /> <br />
+        <textarea
+          className="textarea"
+          placeholder="What is your Question ? "
+          rows="4"
+          cols="50"
+          placeholder="What is your Question ? "
+        />
+        <br />
         <input type="submit" value="Submit" />
       </div>
     );
