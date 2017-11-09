@@ -32,7 +32,7 @@ app.get("/", function(req, res) {
 // ........
 
 // Require Datas routes
-require("./app/routes/data.routes.js")(app);
+require("./app/routes/note.routes.js")(app);
 
 // ........
 
