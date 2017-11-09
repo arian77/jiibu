@@ -2,8 +2,11 @@ var mongoose = require("mongoose");
 
 var NoteSchema = mongoose.Schema(
   {
-    title: String,
-    content: String
+    fullname: String,
+    email: String,
+    password: String,
+    question: String,
+    answer: String
   },
   {
     timestamps: true
